@@ -1,0 +1,25 @@
+{
+  "phase": "structure",
+  "allowedPaths": ["docs/", ".claude/state/", "client/"],
+  "forbiddenPaths": [
+    "docs/approvals.json",
+    ".claude/settings.json",
+    ".claude/hooks/",
+    ".env",
+    "src/",
+    "app/"
+  ],
+  "forbiddenCommands": [
+    "rm -rf",
+    "Remove-Item -Recurse",
+    "git push --force",
+    "npm publish",
+    "npx expo publish"
+  ],
+  "networkAllowed": ["npm", "registry.npmjs.org", "expo.dev"],
+  "requiresHuman": ["git push", "git commit", "store submission"],
+  "boundaries": {
+    "defined": false,
+    "note": "populated by boundaries skill"
+  }
+}

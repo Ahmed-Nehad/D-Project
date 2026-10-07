@@ -1,0 +1,33 @@
+{
+  "phase": "structure",
+  "updatedAt": "",
+  "order": [
+    "client-intake",
+    "brainstorm",
+    "scope-definition",
+    "boundaries",
+    "tech-stack",
+    "architecture",
+    "database-design",
+    "api-design",
+    "ux-planning",
+    "guidelines",
+    "security-compliance",
+    "testing-strategy",
+    "devops-release",
+    "workflow-planning",
+    "risk-register",
+    "docs-handoff"
+  ],
+  "steps": {},
+  "locks": [],
+  "preferParallel": [
+    ["ux-planning", "guidelines"]
+  ],
+  "gates": {
+    "scope-definition": { "artifact": "docs/approvals.json", "approver": "client", "label": "scope" },
+    "tech-stack": { "artifact": "docs/approvals.json", "approver": "manager", "label": "tech-stack" },
+    "api-design": { "artifact": "docs/approvals.json", "approver": "manager", "label": "architecture-db-api" },
+    "workflow-planning": { "artifact": "docs/approvals.json", "approver": "client", "label": "plan-timeline" }
+  }
+}

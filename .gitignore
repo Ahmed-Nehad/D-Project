@@ -1,0 +1,26 @@
+node_modules/
+dist/
+build/
+.expo/
+*.log
+
+# env & secrets
+.env
+.env.*
+*.pem
+
+# OS
+Thumbs.db
+.DS_Store
+
+# editor
+.idea/
+.vscode/
+
+# claude state artifacts (local runtime data, keep skills/settings under git)
+.claude/state/*.log
+.claude/state/failures.json
+.claude/state/snapshot-*.json
+
+# docs runtime
+docs/*.tmp
